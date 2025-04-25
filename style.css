@@ -64,6 +64,10 @@ a:hover {
   cursor: default;
 }
 
+.role {
+  color: rgb(78, 69, 213);
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -372,6 +376,28 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+
+#projects .details-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+#projects .details-container:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  background-color: rgb(150, 140, 240); /* Lighter shade of rgb(78, 69, 213) */
+  border: 2px solid black; /* Add black border */
+}
+
+#projects .details-container:hover .project-btn {
+  border: 2px solid black; /* Add black border to buttons */
+  transition: border 0.3s ease; /* Smooth transition for the border */
+}
+
+#projects .details-container:hover .project-img {
+  border: 2px solid black; /* Add black border to images */
+  transition: border 0.3s ease; /* Smooth transition for the border */
 }
 
 /* CONTACT */

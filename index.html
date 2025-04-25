@@ -7,10 +7,12 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/favicon.jpg" type="image/x-icon" />
+
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Portfolio</div>
+      <div class="logo">Ayush Anand</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +23,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Portfolio</div>
+      <div class="logo">Ayush Anand</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -42,11 +44,11 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ayush Anand</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <!-- <h1 class="title">Ayush Anand</h1> -->
+        <p class="section__text__p2"><span class="role"></span></p>
         <div class="btn-container">
           <button class="btn btn-color-2"
-            onclick="window.open('./assets/resume2.pdf')"
+            onclick="window.open('./assets/resume.pdf')"
           >
             Download CV
           </button>
@@ -59,14 +61,14 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/in/ayushanand07'"
-          />
+            onclick="window.open('https://linkedin.com/in/ayushanand07', '_blank')"
+            />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+            onclick="window.open('https://github.com/ayushanand0', '_blank')"
+            />
         </div>
       </div>
     </section>
@@ -161,7 +163,18 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -227,6 +240,26 @@
                   class="icon"
                 />
                 <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Computer Networks</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
                   <h3>Operating System</h3>
                 </div>
               </article>
@@ -254,17 +287,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Event Management</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/ayushanand0/happeno', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://happeno.vercel.app/', '_blank')"
               >
                 Live Demo
               </button>
@@ -278,17 +311,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Url Shortner</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/ayushanand0/Url-Shortner', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://trimlly.vercel.app/', '_blank')"
               >
                 Live Demo
               </button>
@@ -337,7 +370,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">@gmail.com</a></p>
+          <p><a href="mailto:ayush07anand@gmail.com">@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -362,6 +395,8 @@
       </nav>
       <p>Copyright &#169; 2023 Ayush Anand. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
   </body>
 </html>
