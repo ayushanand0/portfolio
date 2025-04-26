@@ -75,6 +75,7 @@ a:hover {
   display: none;
 }
 
+/* Hamburger Menu Styling */
 .hamburger-menu {
   position: relative;
   display: inline-block;
@@ -84,69 +85,67 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
   width: 30px;
+  height: 24px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links a {
   display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links.open {
-  max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+/* Animation for open state */
+.hamburger-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+.hamburger-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
+/* Menu Links Styling */
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: 200px;
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: max-height 0.3s ease;
 }
 
-.hamburger-icon span:first-child {
-  opacity: 1;
+.menu-links.open {
+  max-height: 300px;
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
+.menu-links li {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-links li a:hover {
+  color: rgb(78, 69, 213);
 }
 
 /* SECTIONS */
@@ -385,20 +384,20 @@ article .icon {
 }
 
 #projects .details-container:hover {
-  transform: scale(1.05); /* Slightly enlarge the card */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-  background-color: rgb(150, 140, 240); /* Lighter shade of rgb(78, 69, 213) */
-  border: 2px solid black; /* Add black border */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgb(150, 140, 240);
+  border: 2px solid black;
 }
 
 #projects .details-container:hover .project-btn {
-  border: 2px solid black; /* Add black border to buttons */
-  transition: border 0.3s ease; /* Smooth transition for the border */
+  border: 2px solid black;
+  transition: border 0.3s ease;
 }
 
 #projects .details-container:hover .project-img {
-  border: 2px solid black; /* Add black border to images */
-  transition: border 0.3s ease; /* Smooth transition for the border */
+  border: 2px solid black;
+  transition: border 0.3s ease; 
 }
 
 /* CONTACT */
